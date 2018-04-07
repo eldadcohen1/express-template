@@ -8,8 +8,9 @@ export class Main {
 
     init(){
         this.app.use("/",router);
+        this.app.listen(8080,"localhost");
     }
 }
 
-const main = new Main().init();
+var main = new Main().init();
 
